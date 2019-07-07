@@ -16,7 +16,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 下载好之后，替换你的配置文件（文件路径~/.vimrc）。
 然后保存退出，再打开你的.vimrc。然后执行`:Plug Install`这个命令，就自动安装插件了。
 要记住，以后每添加一个插件都要执行一次这个命令。
-以后要是想安装插件就在下面第五行中添加。就是`Plug "github用户名/项目名"
+以后要是想安装插件就在下面第五行中添加。就是`Plug "github用户名/项目名"`
 比如[https://github.com/vim-airline/vim-airline](https://github.com/vim-airline/vim-airline)
 这是一个插件的项目地址，添加插件的方法就是`Plug vim-airline/vim-airline`。就是URL地址后面的部分。
 ```c
