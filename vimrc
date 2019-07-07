@@ -1,14 +1,15 @@
-inoremap jj <Esc>`^
-set nu 
-syntax on 
-set hlsearch 
-set background=dark
-colorscheme hybrid
-set cursorline
-set showcmd
-set scrolloff=5
-set tabstop=4
+inoremap jj <Esc>`^ "将esc键映射为jj键，jj键很少连续出现
+set nu              "设置显示行号
+syntax on           "显示语法高亮
+set hlsearch        "搜索显示高亮
+set background=dark "设置背景为黑色
+colorscheme hybrid  "用插件实现的主题颜色
+set cursorline      "光标所在处显示光标线
+set showcmd         "显示命令用的
+set scrolloff=5     "设置光标移动的时候，上下至少都有五行的可显示部分
+set tabstop=4       "设置tab键为4个空格
 
+"插件管理部分
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
@@ -33,7 +34,10 @@ Plug 'nathanaelkane/vim-indent-guides'
 
 " Initialize plugin system
 call plug#end()
+"插件结束部分
 
+
+"插件配置部分
 " ==
 " " ==snazzy 
 " " ==
