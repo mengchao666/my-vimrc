@@ -31,6 +31,7 @@ Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'godlygeek/tabular'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'itchyny/vim-cursorword'
 
 " Initialize plugin system
 call plug#end()
