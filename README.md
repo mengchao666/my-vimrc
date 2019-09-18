@@ -1,3 +1,5 @@
+:relieved:
+
 ## my-vimrc
 
 首先这是我的个人vim配置文件。
@@ -7,7 +9,7 @@
 关于基础的vim命令和操作什么的。我写过一篇文章可以看看。[文章链接](https://mengchao.xyz/index.php/archives/146/)。不懂的可以自己查找一些资料
 
 ## 配置自己的vim
-首先下载一个vim的插件管理器。我推荐vim-plug。安装方法如下：
+首先下载一个vim的插件管理器。我推荐vim-plug。:lollipop:安装方法如下：
 在终端中输入如下命令
 ```c
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -30,7 +32,7 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 ```
 
-## 介绍我的vimrc文件的功能和用法
+## :watermelon:介绍我的vimrc文件的功能和用法
 我在vimrc文件中已经详细的注释了每句话的功能，可以参考。
 下面说说插件的功能。
 ### 'mhinz/vim-startify'
