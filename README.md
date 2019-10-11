@@ -1,8 +1,10 @@
-## 1、:relieved:my-vimrc
+## 1、关于
 
-首先这是我的个人vim配置文件。第一：当做一个自己的备份。第二：分享一下自己的配置。下面介绍详细过程与安装方法。关于基础的vim命令和操作什么的。我写过一篇文章可以看看。[文章链接](https://mengchao.xyz/index.php/archives/146/)。不懂的可以自己查找一些资料。
+首先放图一张配置后就是这个样子
+![](https://i.loli.net/2019/06/25/5d11cccf2afab61992.png)
+这是我的个人vim配置文件。第一：当做一个自己的备份。第二：分享一下自己的配置。下面介绍详细过程与安装方法。关于基础的vim命令和操作什么的。我写过一篇文章可以看看。[文章链接](https://mengchao.xyz/index.php/archives/146/)。不懂的可以自己查找一些资料。
 
-## 2、配置自己的vim
+## 2、使用方法
 **第一步：**首先我们下载一个vim的插件管理器。我推荐vim-plug。:lollipop:安装方法如下：
 在终端中输入如下命令
 
@@ -18,6 +20,9 @@ git clone https://github.com/mengchaobbbigrui/my-vimrc
 ```
 
 下载好之后，替换你的配置文件（文件路径在当前用户目录下的~/.vimrc），是个隐藏文件。
+```c
+cp ./my-vimrc ~/.vimrc
+```
 
 然后保存退出，再打开你的.vimrc。然后执行`:Plug Install`这个命令，就自动安装插件了。要记住，以后每添加一个插件都要执行一次这个命令。以后要是想安装插件就在下面第五行中（两个call中间）添加。就是`Plug "github用户名/项目名"`比如[https://github.com/vim-airline/vim-airline](https://github.com/vim-airline/vim-airline)这是一个插件的项目地址，添加插件的方法就是`Plug vim-airline/vim-airline`。就是URL地址后面的部分。
 
@@ -27,25 +32,19 @@ git clone https://github.com/mengchaobbbigrui/my-vimrc
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
+Plug vim-airline/vim-airline
+
 " Initialize plugin system
 call plug#end()
 ```
 
+配置中'w0ng/vim-hybrid'这个插件，还要配置一下才能使用，看下面的**介绍我的vimrc文件的功能和用法**中的第一个插件用法配置一下即可。
+到这里配置就已经完成了，可以去愉快地用vim了。
 
-
-到这里基本就已经完事了，可以使用了，具体的代码功能vimrc中我已经注释的很明确了
-
-
-
-## 3、:watermelon:介绍我的vimrc文件的功能和用法
+## 3、介绍我的vimrc文件的功能和用法
 
 我在vimrc文件中已经详细的注释了每句话的功能，可以参考。
 下面说说插件的功能。
-### 'mhinz/vim-startify'
-在终端输入vim的时候，会出现一个界面，比较好看，美化用的。
-效果如下：
-![vim](https://i.loli.net/2019/06/04/5cf647a07dca444223.png)
-
 ### 'w0ng/vim-hybrid'
 用于配置颜色，想使用这个插件，要先执行以下几个命令，才能实现。
 在末行模式下输入:w保存该文件，再在末行模式下输入:source ~/.vimrc使配置文件生效，接着在末行模式下输入:PlugInstall安装插件。待安装完成后，在末行模式下输入:qa退出。
@@ -65,6 +64,12 @@ cp ~/.vim/plugged/vim-hybrid/colors/hybrid.vim ~/.vim/colors/hybrid.vim
 set background=dark
 colorscheme hybrid
 ```
+
+### 'mhinz/vim-startify'
+当你在终端输入vim的时候，会出现一个界面，比较好看，美化用的。
+效果如下：
+![vim](https://i.loli.net/2019/06/04/5cf647a07dca444223.png)
+
 ### 'vim-airline/vim-airline'
 这是一个在vim底下增加了一个状态栏美化的功能。
 
