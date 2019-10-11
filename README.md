@@ -5,7 +5,7 @@
 这是我的个人vim配置文件。第一：当做一个自己的备份。第二：分享一下自己的配置。下面介绍详细过程与安装方法。关于基础的vim命令和操作什么的。我写过一篇文章可以看看。[文章链接](https://mengchao.xyz/index.php/archives/146/)。不懂的可以自己查找一些资料。
 
 ## 2、使用方法
-**第一步：**首先我们下载一个vim的插件管理器。我推荐vim-plug。:lollipop:安装方法如下：
+**第一步**：首先我们下载一个vim的插件管理器。我推荐vim-plug。:lollipop:安装方法如下：
 在终端中输入如下命令
 
 ```
@@ -13,7 +13,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 
 ```
 
-**第二步：**使用下面git命令下载我的这个my-vimrc文件，或者直接复制过去也行。
+**第二步**：使用下面git命令下载我的这个my-vimrc文件，或者直接复制过去也行。
 
 ```c
 git clone https://github.com/mengchaobbbigrui/my-vimrc
