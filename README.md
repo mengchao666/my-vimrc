@@ -1,3 +1,4 @@
+![](https://img.shields.io/github/stars/mengchaobbbigrui/my-vimrc)    ![](https://img.shields.io/github/forks/mengchaobbbigrui/my-vimrc)    ![](https://img.shields.io/github/issues/mengchaobbbigrui/my-vimrc)
 ## 1、关于
 
 首先放图一张配置后就是这个样子
