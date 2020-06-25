@@ -44,6 +44,35 @@ call plug#end()
 
 ## 3、介绍我的vimrc文件的功能和用法
 
+### 说一下ctags和taglist
+可以直接通过sudo apt-get install ctags安装(在yum源配置好的情况下)，然后通过ctags --help 查看是否安装成功，如果显示一大堆命令信息表明安装成功
+下载ctags-5.8.tar.gz
+i）在终端解压：tar -zxvf ctags-5.8.tar.gz
+ii）进入到ctags-5.8目录，执行： ./configure
+iii）再执行： make
+iv）继续执行： make install
+完成安装后即可使用
+在对应工程文件上层目录使用
+ctags –R命令之后再打开文件，用Ctrl+]即可跳转到函数定义，按下Ctrl+t即可返回
+
+Taglist是vim的一个插件，提供源代码符号的结构化视图。像sourceinsignt左侧栏一样
+1）从http://www.vim.org/scripts/script.php?script_id=273下载安装包，也可以从http://vim-taglist.sourceforge.net/index.html下载。
+
+2）进入~/.vim目录，将Taglist安装包解压，解压后会在~/.vim目录中生成几个新子目录，如plugin和doc（安装其它插件时，可能还会新建autoload等其它目录）。
+
+3）进入~/.vim/doc目录，在Vim下运行"helptags ."命令。此步骤是将doc下的帮助文档加入到Vim的帮助主题中，这样我们就可以通过在Vim中运行“help taglist.txt”查看taglist帮助。
+
+4）打开配置文件~/.vimrc，加入以下几行：
+
+let Tlist_Show_One_File=1     "不同时显示多个文件的tag，只显示当前文件的    
+let Tlist_Exit_OnlyWindow=1   "如果taglist窗口是最后一个窗口，则退出vim   
+let Tlist_Ctags_Cmd="/usr/bin/ctags" "将taglist与ctags关联  
+
+
+在Vim命令行下运行":Tlist"就可以打开Taglist窗口，再次运行":Tlist"则关闭。
+
+左右窗口切换Ctrl+ww
+
 我在vimrc文件中已经详细的注释了每句话的功能，可以参考。
 下面说说插件的功能。
 ### 'w0ng/vim-hybrid'
